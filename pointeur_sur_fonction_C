@@ -1,0 +1,2 @@
+//pointeur sur fonction C
+ptr_attack ptr[3] = {&Human::meleeAttack, &Human::rangedAttack, &Human::intimid    atingShout};
