@@ -13,7 +13,7 @@
             "   $2($2 const & src);",
             "   virtual ~$2(void);",
             "",
-            "  $2& operator=($2 const & rhs);",
+            "$2&    operator=($2 const & rhs);",
             "};",
             "",
             "#endif"
@@ -28,24 +28,24 @@
             "/* CONSTRUCTORS */",
             "",
             "$1::$1(void) {",
-            "  return;",
+            "   return;",
             "}",
             "",
             "$1::$1($1 const & src) {",
-            "  *this = src;",
-            "  return;",
+            "   *this = src;",
+            "   return;",
             "}",
             "",
             "$1::~$1(void) {",
-            "  return;",
+            "   return;",
             "}",
             "",
             "/* MEMBERS */",
             "",
             "/* OPERATORS */",
             "",
-            "$1& $1::operator=($1 const & rhs) {",
-            "  return *this;",
+            "$1&    $1::operator=($1 const & rhs) {",
+            "   return *this;",
             "}"
         ],
         "description": "Create c++ methods"
@@ -55,9 +55,9 @@
         "body": [
             "#include \"$1.hpp\"",
             "",
-            "int main(void) {",
-            "  $0",
-            "  return (0);",
+            "int    main(void) {",
+            "   $0",
+            "   return (0);",
             "}"
         ],
         "description": "Create c++ main"
@@ -65,11 +65,11 @@
     "getsetc": {
         "prefix": "gestsetc",
         "body": [
-            "$1 $2::get$3(void)const{",
+            "$1     $2::get$3(void)const{",
             "   return this->$4;",
             "}",
             "",
-            "void $2::set$3($1 $5){",
+            "void   $2::set$3($1 $5){",
             "   this->$4 = $5;",
             "}"
         ],
@@ -78,8 +78,8 @@
     "getseth": {
         "prefix": "gestseth",
         "body": [
-            "$1 get$2(void)const;",
-            "void set$2($1 $3);"
+            "$1     get$2(void)const;",
+            "void   set$2($1 $3);"
         ],
         "description": "Create c++ main"
     }
